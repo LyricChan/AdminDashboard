@@ -1,6 +1,6 @@
 body {
   display: grid;
-  grid-template: 1fr 4fr / 200px 3fr 1fr;
+  grid-template: 1fr 4fr / 1fr 3fr 1fr;
 }
 
 a {
@@ -40,7 +40,6 @@ header {
 nav {
   grid-row: 1/3;
   background-color: rgb(159, 210, 255);
-  height: 100vh;
 }
 
 .navCard,
@@ -54,8 +53,17 @@ section {
   grid-column: 2/3;
   grid-row: 2/3;
   display: grid;
-  grid-template: 50px 1fr / 1fr 1fr;
+  grid-template: 5% 1fr / 1fr 1fr;
   grid-auto-rows: 1fr;
+  background-color: rgb(228, 228, 228);
+}
+
+.proj-cards {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  margin: 15px;
+  padding: 10px;
 }
 
 section h1 {
@@ -63,6 +71,23 @@ section h1 {
 }
 
 aside {
+  background-color: rgb(228, 228, 228);
+
   grid-column: 3/4;
   grid-row: 2/3;
+}
+
+.trending-user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: white;
+  margin: 15px;
+  padding: 10px;
+}
+
+.anounce-container {
+  background-color: white;
+  margin: 15px;
+  padding: 10px;
 }
